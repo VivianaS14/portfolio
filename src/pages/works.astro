@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Proyectos - Viviana Soriano">
+  <div class="grid grid-cols-2 gap-6 m-10">
+    <Card
+      title="Fluff Store"
+      href="https://fluff-store.vercel.app/product/fpr72m9k"
+    >
+      <p slot="description" class="text-neutral-500">
+        E-Commerce realizado con NextJS
+      </p>
+      <div slot="content">
+        <img src="/assests/fluffstore.png" alt="" srcset="" />
+      </div>
+    </Card>
+    <Card title="Pokédex" href="https://pokedex-vs.netlify.app/">
+      <p slot="description" class="text-neutral-500">
+        Pokédex donde puedes encontrar diferentes pokemon, objetos y lugares.
+        También puedes explorar más detalles sobre cada pokemon, ítem y
+        ubicación. Hecho con React, react query, TypeScript y tailwind CSS.
+      </p>
+      <div slot="content">
+        <img src="/assests/Pokédex.png" alt="" srcset="" />
+      </div>
+    </Card>
+    <Card title="To Do App" href="https://to-do-app-vs.netlify.app/">
+      <p slot="description" class="text-neutral-500">
+        Aplicacion To Do realizado con React y JavaScript, estilado con SASS y
+        HTTP requests con Axios
+      </p>
+      <div slot="content">
+        <img src="/assests/todoapp.png" alt="" srcset="" />
+      </div>
+    </Card>
+    <Card
+      title="Expenses App"
+      href="https://github.com/VivianaS14/expenses-app"
+    >
+      <p slot="description" class="text-neutral-500">
+        Registra tus gastos diarios y manetente al dia con tus finanzas.
+        Expenses App, realizada con React Native, TypeScript, Redux Toolkit,
+        Axios, Firebase DataBase y Autenticacion
+      </p>
+      <div slot="content">
+        <img src="/assests/expenses.png" alt="" srcset="" />
+      </div>
+    </Card>
+  </div>
+</Layout>
