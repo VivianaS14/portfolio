@@ -6,6 +6,6 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react()],
-  site: "https://VivianaS14.github.io",
-  base: "portfolio",
+  // site: "https://VivianaS14.github.io",
+  // base: "portfolio",
 });
